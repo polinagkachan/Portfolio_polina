@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Полина — разработчик</title>
+  <meta name="description" content="Разработчик сайтов, приложений и автоматизации. Создаю продукты от идеи до запуска.">
+  <meta property="og:title" content="Полина — разработчик">
+  <meta property="og:description" content="Разработчик сайтов, приложений и автоматизации. Создаю продукты от идеи до запуска.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/portrait.jpg">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Onest:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Основная навигация">
+      <!-- EDIT: замените @your_username на ваш Telegram -->
+      <a class="nav__logo" href="#top">Полина</a>
+      <ul class="nav__links">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#contact">Контакт</a></li>
+      </ul>
+      <a class="nav__cta btn btn--accent" href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <button class="nav__toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <ul>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#contact">Контакт</a></li>
+        <li><a href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- EDIT: имя, роль и bio -->
+    <section class="hero section" id="about" aria-labelledby="hero-title">
+      <div class="hero__inner container">
+        <div class="hero__photo reveal">
+          <div class="hero__photo-frame">
+            <img src="assets/portrait.jpg" alt="Полина — разработчик" width="480" height="600" loading="eager">
+          </div>
+        </div>
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow">Привет, я</p>
+          <h1 class="hero__title" id="hero-title">Полина</h1>
+          <p class="hero__role">разработчик</p>
+          <p class="hero__bio">
+            Создаю сайты, приложения и автоматизацию — от идеи до рабочего продукта.
+            Люблю понятный код, аккуратный интерфейс и проекты, которые реально решают задачу.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">Обсудить проект</a>
+            <a class="btn btn--ghost" href="#projects">Смотреть работы</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDIT: описания услуг -->
+    <section class="services section section--alt" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Что я делаю</p>
+          <h2 class="section-title" id="services-title">Услуги</h2>
+        </header>
+        <div class="services__grid">
+          <article class="service-card reveal">
+            <span class="service-card__num" aria-hidden="true">01</span>
+            <h3 class="service-card__title">Веб-разработка</h3>
+            <p class="service-card__text">Лендинги, интернет-магазины и корпоративные сайты — быстро, аккуратно и с вниманием к деталям.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-card__num" aria-hidden="true">02</span>
+            <h3 class="service-card__title">Мобильные приложения</h3>
+            <p class="service-card__text">iOS, Android и кроссплатформенная разработка. От прототипа до публикации в сторах.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-card__num" aria-hidden="true">03</span>
+            <h3 class="service-card__title">Игры и интерактив</h3>
+            <p class="service-card__text">Браузерные игры и gamified-опыт — когда нужно вовлечь, а не просто показать информацию.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-card__num" aria-hidden="true">04</span>
+            <h3 class="service-card__title">AI-боты и автоматизация</h3>
+            <p class="service-card__text">Telegram-боты, AI-агенты и интеграции, которые снимают рутину и ускоряют процессы.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDIT: навыки под ваш реальный стек -->
+    <section class="skills section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Стек и инструменты</p>
+          <h2 class="section-title" id="skills-title">Навыки</h2>
+        </header>
+        <div class="skills__groups">
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Frontend</h3>
+            <ul class="skill-tags">
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Backend</h3>
+            <ul class="skill-tags">
+              <li>Node.js</li>
+              <li>Python</li>
+              <li>REST API</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Mobile</h3>
+            <ul class="skill-tags">
+              <li>React Native</li>
+              <li>Flutter</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Tools</h3>
+            <ul class="skill-tags">
+              <li>Git</li>
+              <li>Cursor</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">AI</h3>
+            <ul class="skill-tags">
+              <li>OpenClaw</li>
+              <li>LLM-интеграции</li>
+              <li>Автоматизация</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDIT: ссылки на проекты -->
+    <section class="projects section section--alt" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Портфолио</p>
+          <h2 class="section-title" id="projects-title">Проекты</h2>
+        </header>
+        <div class="projects__grid">
+          <article class="project-card reveal">
+            <p class="project-card__type">E-commerce</p>
+            <h3 class="project-card__title">Интернет-магазин</h3>
+            <p class="project-card__text">Онлайн-магазин с каталогом, корзиной и удобным оформлением заказа.</p>
+            <a class="project-card__link" href="#" target="_blank" rel="noopener noreferrer">
+              Посмотреть
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+          <article class="project-card reveal">
+            <p class="project-card__type">Game</p>
+            <h3 class="project-card__title">Браузерная игра</h3>
+            <p class="project-card__text">Интерактивная игра с продуманной механикой и отзывчивым интерфейсом.</p>
+            <a class="project-card__link" href="#" target="_blank" rel="noopener noreferrer">
+              Посмотреть
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+          <article class="project-card reveal">
+            <p class="project-card__type">Mobile</p>
+            <h3 class="project-card__title">Мобильное приложение</h3>
+            <p class="project-card__text">Кроссплатформенное приложение с нативным ощущением и чистой архитектурой.</p>
+            <a class="project-card__link" href="#" target="_blank" rel="noopener noreferrer">
+              Посмотреть
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+          <article class="project-card reveal">
+            <p class="project-card__type">AI Agent</p>
+            <h3 class="project-card__title">OpenClaw Bot</h3>
+            <p class="project-card__text">Настройка и интеграция AI-агента для автоматизации задач через мессенджеры.</p>
+            <a class="project-card__link" href="https://openclaw.ai/" target="_blank" rel="noopener noreferrer">
+              Подробнее об OpenClaw
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDIT: Telegram @username -->
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__inner">
+        <div class="contact__info reveal">
+          <header class="section-header section-header--left">
+            <p class="section-eyebrow">Связаться</p>
+            <h2 class="section-title" id="contact-title">Давайте работать вместе</h2>
+          </header>
+          <p class="contact__text">
+            Расскажите о задаче — отвечу в течение дня. Можно написать в Telegram или оставить заявку через форму.
+          </p>
+          <a class="btn btn--accent btn--telegram" href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+            @your_username
+          </a>
+        </div>
+
+        <div class="contact__form-wrap reveal">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
+              <span class="form-error" id="name-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="contact">Email или Telegram</label>
+              <input type="text" id="contact-field" name="contact" required placeholder="email@example.com или @username">
+              <span class="form-error" id="contact-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="project-type">Тип проекта</label>
+              <select id="project-type" name="project-type">
+                <option value="">Выберите тип</option>
+                <option value="web">Веб-сайт / магазин</option>
+                <option value="mobile">Мобильное приложение</option>
+                <option value="game">Игра / интерактив</option>
+                <option value="bot">Бот / автоматизация</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Кратко опишите задачу"></textarea>
+              <span class="form-error" id="message-error" role="alert"></span>
+            </div>
+            <button class="btn btn--primary btn--full" type="submit">Отправить заявку</button>
+          </form>
+          <div class="form-success" id="form-success" hidden>
+            <p class="form-success__title">Спасибо!</p>
+            <p class="form-success__text">Заявка получена. Скоро свяжусь с вами.</p>
+            <button class="btn btn--ghost" type="button" id="form-reset">Отправить ещё</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; <span id="year"></span> Полина. Разработчик.</p>
+      <a class="footer__link" href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">Telegram</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -54,13 +54,13 @@
       <div class="hero__inner container">
         <div class="hero__photo reveal">
           <div class="hero__photo-frame">
-            <img src="assets/portrait.jpg" alt="Полина Качан — разработчик" width="480" height="600" loading="eager">
+            <img src="assets/portrait.jpg" alt="Полина Качан — разработчик с продуктовым бэкграундом" width="480" height="600" loading="eager">
           </div>
         </div>
         <div class="hero__content reveal">
           <p class="hero__eyebrow">Привет, я</p>
           <h1 class="hero__title" id="hero-title">Полина Качан</h1>
-          <p class="hero__role">разработчик</p>
+          <p class="hero__role">разработчик с продуктовым бэкграундом</p>
           <p class="hero__bio">
             6+ лет в финтехе. Создаю сайты, приложения и автоматизацию — от идеи до рабочего продукта.
             Думаю не только как разработчик, но и как продуктовый менеджер: понимаю пользователя,
@@ -105,7 +105,6 @@
     <section class="services section section--alt" id="services" aria-labelledby="services-title">
       <div class="container">
         <header class="section-header reveal">
-          <p class="section-eyebrow">Что я делаю</p>
           <h2 class="section-title" id="services-title">Услуги</h2>
         </header>
         <div class="services__grid">
@@ -117,12 +116,12 @@
           <article class="service-card reveal">
             <span class="service-card__num" aria-hidden="true">02</span>
             <h3 class="service-card__title">Мобильные&nbsp;приложения</h3>
-            <p class="service-card__text">iOS, Android и кроссплатформенная разработка. От прототипа до публикации в сторах.</p>
+            <p class="service-card__text">React Native и мобильная разработка на Replit — от прототипа до рабочей версии.</p>
           </article>
           <article class="service-card reveal">
             <span class="service-card__num" aria-hidden="true">03</span>
-            <h3 class="service-card__title">Игры и интерактив</h3>
-            <p class="service-card__text">Браузерные игры и gamified-опыт — когда нужно вовлечь, а не просто показать информацию.</p>
+            <h3 class="service-card__title">Браузерные игры</h3>
+            <p class="service-card__text">Простые игры в браузере — логика, интерфейс и игровой процесс с нуля.</p>
           </article>
           <article class="service-card reveal">
             <span class="service-card__num" aria-hidden="true">04</span>
@@ -137,8 +136,7 @@
     <section class="skills section" id="skills" aria-labelledby="skills-title">
       <div class="container">
         <header class="section-header reveal">
-          <p class="section-eyebrow">Стек и инструменты</p>
-          <h2 class="section-title" id="skills-title">Навыки</h2>
+          <h2 class="section-title" id="skills-title">Навыки и инструменты</h2>
         </header>
         <div class="skills__groups">
           <div class="skill-group reveal">
@@ -170,7 +168,7 @@
             <h3 class="skill-group__title">Mobile</h3>
             <ul class="skill-tags">
               <li>React Native</li>
-              <li>Flutter</li>
+              <li>Replit</li>
             </ul>
           </div>
           <div class="skill-group reveal">
@@ -197,7 +195,6 @@
     <section class="projects section section--alt" id="projects" aria-labelledby="projects-title">
       <div class="container">
         <header class="section-header reveal">
-          <p class="section-eyebrow">Портфолио</p>
           <h2 class="section-title" id="projects-title">Проекты</h2>
         </header>
         <div class="projects__grid">
@@ -213,7 +210,7 @@
           <article class="project-card reveal">
             <p class="project-card__type">Game</p>
             <h3 class="project-card__title">Браузерная игра</h3>
-            <p class="project-card__text">Интерактивная игра с продуманной механикой и отзывчивым интерфейсом.</p>
+            <p class="project-card__text">Простая браузерная игра по типу «Морской бой» — логика, поле и ходы игрока.</p>
             <a class="project-card__link" href="#" target="_blank" rel="noopener noreferrer">
               Посмотреть
               <span aria-hidden="true">→</span>
@@ -222,7 +219,7 @@
           <article class="project-card reveal">
             <p class="project-card__type">Mobile</p>
             <h3 class="project-card__title">Мобильное приложение</h3>
-            <p class="project-card__text">Кроссплатформенное приложение с нативным ощущением и чистой архитектурой.</p>
+            <p class="project-card__text">Мобильное приложение на React Native и Replit — от идеи до рабочей версии.</p>
             <a class="project-card__link" href="#" target="_blank" rel="noopener noreferrer">
               Посмотреть
               <span aria-hidden="true">→</span>
@@ -278,7 +275,7 @@
                 <option value="">Выберите тип</option>
                 <option value="web">Веб-сайт / магазин</option>
                 <option value="mobile">Мобильное приложение</option>
-                <option value="game">Игра / интерактив</option>
+                <option value="game">Браузерная игра</option>
                 <option value="bot">Бот / автоматизация</option>
                 <option value="other">Другое</option>
               </select>
@@ -287,6 +284,17 @@
               <label for="message">Сообщение</label>
               <textarea id="message" name="message" rows="4" required placeholder="Кратко опишите задачу"></textarea>
               <span class="form-error" id="message-error" role="alert"></span>
+            </div>
+            <div class="form-group form-group--consent">
+              <label class="form-consent">
+                <input type="checkbox" id="consent" name="consent" required>
+                <span class="form-consent__text">
+                  Я соглашаюсь с <a href="offer.html" target="_blank" rel="noopener noreferrer">договором публичной оферты</a>
+                  и <a href="privacy.html" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a>,
+                  а также даю согласие на обработку персональных данных
+                </span>
+              </label>
+              <span class="form-error" id="consent-error" role="alert"></span>
             </div>
             <button class="btn btn--primary btn--full" type="submit">Отправить в Telegram</button>
           </form>
@@ -302,8 +310,14 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="footer__copy">&copy; <span id="year"></span> Полина Качан. Разработчик.</p>
-      <a class="footer__link" href="https://t.me/kpolino4ka" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <p class="footer__copy">&copy; <span id="year"></span> Полина Качан. Разработчик с продуктовым бэкграундом.</p>
+      <div class="footer__links">
+        <nav class="footer__legal" aria-label="Юридические документы">
+          <a href="privacy.html">Политика конфиденциальности</a>
+          <a href="offer.html">Публичная оферта</a>
+        </nav>
+        <a class="footer__link" href="https://t.me/kpolino4ka" target="_blank" rel="noopener noreferrer">Telegram</a>
+      </div>
     </div>
   </footer>
 

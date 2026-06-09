@@ -80,7 +80,7 @@
   var PROJECT_TYPE_LABELS = {
     web: "Веб-сайт / магазин",
     mobile: "Мобильное приложение",
-    game: "Игра / интерактив",
+    game: "Браузерная игра",
     bot: "Бот / автоматизация",
     other: "Другое"
   };
@@ -120,8 +120,18 @@
     if (error) error.textContent = message;
   }
 
+  function showConsentError(message) {
+    var consentLabel = document.querySelector(".form-consent");
+    var error = document.getElementById("consent-error");
+    if (consentLabel) consentLabel.classList.add("error");
+    if (error) error.textContent = message;
+  }
+
   function clearErrors() {
     form.querySelectorAll(".error").forEach(function (el) {
+      el.classList.remove("error");
+    });
+    form.querySelectorAll(".form-consent").forEach(function (el) {
       el.classList.remove("error");
     });
     form.querySelectorAll(".form-error").forEach(function (el) {
@@ -136,6 +146,7 @@
     var name = document.getElementById("name");
     var contact = document.getElementById("contact-field");
     var message = document.getElementById("message");
+    var consent = document.getElementById("consent");
 
     if (!name.value.trim()) {
       showError("name", "name-error", "Укажите имя");
@@ -149,6 +160,11 @@
 
     if (!message.value.trim()) {
       showError("message", "message-error", "Напишите сообщение");
+      valid = false;
+    }
+
+    if (!consent || !consent.checked) {
+      showConsentError("Подтвердите согласие с офертой и политикой конфиденциальности");
       valid = false;
     }
 

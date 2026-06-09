@@ -75,10 +75,43 @@
     });
   });
 
-  // Contact form validation & mock submit
+  // Contact form → Telegram
+  var TELEGRAM_USERNAME = "kpolino4ka";
+  var PROJECT_TYPE_LABELS = {
+    web: "Веб-сайт / магазин",
+    mobile: "Мобильное приложение",
+    game: "Игра / интерактив",
+    bot: "Бот / автоматизация",
+    other: "Другое"
+  };
+
   var form = document.getElementById("contact-form");
   var successBlock = document.getElementById("form-success");
   var resetBtn = document.getElementById("form-reset");
+
+  function buildTelegramMessage() {
+    var name = document.getElementById("name").value.trim();
+    var contact = document.getElementById("contact-field").value.trim();
+    var projectType = document.getElementById("project-type").value;
+    var message = document.getElementById("message").value.trim();
+    var typeLabel = PROJECT_TYPE_LABELS[projectType] || "Не указан";
+
+    return [
+      "Новая заявка с сайта",
+      "",
+      "Имя: " + name,
+      "Контакт: " + contact,
+      "Тип проекта: " + typeLabel,
+      "",
+      "Сообщение:",
+      message
+    ].join("\n");
+  }
+
+  function openTelegramWithMessage(text) {
+    var url = "https://t.me/" + TELEGRAM_USERNAME + "?text=" + encodeURIComponent(text);
+    window.open(url, "_blank", "noopener,noreferrer");
+  }
 
   function showError(fieldId, errorId, message) {
     var field = document.getElementById(fieldId);
@@ -127,6 +160,7 @@
       e.preventDefault();
       if (!validateForm()) return;
 
+      openTelegramWithMessage(buildTelegramMessage());
       form.hidden = true;
       successBlock.hidden = false;
     });
